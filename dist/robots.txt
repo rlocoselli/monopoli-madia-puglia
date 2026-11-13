@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://monopoli-madia-puglia.rlocoselli.chatgpt.site/sitemap.xml
