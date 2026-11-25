@@ -11,6 +11,10 @@ Sito statico multilingue dedicato a Monopoli, alla Madonna della Madia e alla Pu
 
 Il sito è in `dist/` e non richiede Node.js né una fase di build. Le fotografie usate dal sito sono incluse in `dist/`; le rispettive attribuzioni e i link alle fonti sono nelle pagine HTML.
 
+## Musica di sottofondo
+
+La canzone autorizzata è in `dist/monopoli-tienici-qui.mp3`. La musica è attiva per impostazione predefinita su tutte le pagine; il visitatore può disattivarla o riattivarla con il pulsante. Se il browser blocca l'avvio automatico con audio, la riproduzione inizia alla prima interazione consentita. La scelta di disattivarla rimane memorizzata nel browser.
+
 ## Avvio con Docker
 
 ```bash
