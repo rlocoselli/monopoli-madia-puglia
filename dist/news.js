@@ -9,10 +9,10 @@ fetch('/feed.xml').then(response => {
   parsed.querySelectorAll('item').forEach(item => {
     const link = item.querySelector('link')?.textContent || '';
     const url = new URL(link, location.origin);
-    if (url.hostname !== 'monopoli-madia-puglia.rlocoselli.chatgpt.site' && url.origin !== location.origin) return;
-    if (url.pathname !== '/notizie.html') return;
+    if (url.hostname !== 'monopoli.audeladedonnees.fr' && url.origin !== location.origin) return;
+    if (!url.pathname.startsWith('/notizie/') || !url.pathname.endsWith('.html')) return;
     const a = document.createElement('a');
-    a.href = url.pathname + url.hash;
+    a.href = url.pathname;
     const date = document.createElement('time');
     const published = new Date(item.querySelector('pubDate')?.textContent || '');
     if (!Number.isNaN(published.getTime())) {
